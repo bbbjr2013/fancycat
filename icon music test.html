@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ -->
+ <script src="jquery-1.8.2.js"></script> 
+  <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+
+
+</head>
+
+<body>
+    
+
+<div class="fixed-action-btn" style="bottom: 50px; left: 80px;">
+
+	<a id="mtoogle" style="cursor:pointer;" class="btn-floating btn-large waves-effect waves-light  teal darken-1" ><i id="change-image" class="mdi-av-pause"></i><!-- <img id="change-image" src="sp.png" height=35 width=35 > -->
+	</a>
+	<audio id="playTune" autoplay loop>
+	<source src="music/1.mp3">
+	</audio>
+
+</div>
+
+	<script type="text/javascript">
+		$("#mtoogle").toggle(
+		function () {
+		document.getElementById('playTune').pause();
+		},
+		function () {
+		document.getElementById('playTune').play();
+		}
+		);
+	</script>
+
+
+	<script>
+	$('#change-image').on
+	(
+	{
+    'click': function () 
+    	{
+        var origsrc = $(this).attr('class');
+        var clas = '';
+        if (origsrc == 'mdi-av-pause') clas = 'mdi-av-play-arrow';
+        if (origsrc == 'mdi-av-play-arrow') clas = 'mdi-av-pause';
+        
+        $(this).attr('class', clas);
+    	}
+	}
+	);
+	</script>
+   
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+

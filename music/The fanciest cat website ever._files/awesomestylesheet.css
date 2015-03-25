@@ -1,0 +1,6 @@
+body{background-color:#000;color:white;text-align:center;}
+div#menu{visibility:visible;}
+a:link{color:white;text-decoration:none;}
+a:visited {color:white;}
+a:hover {text-decoration:underline;}
+

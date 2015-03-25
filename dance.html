@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>The fanciest cat website ever.</title>
+<link rel="icon" type="image/png" href="fancycat.png">
+<link href="awesomestylesheet.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body{background-image:url('pusheendance.gif');}
+a:link{color:black;text-decoration:none;}
+a:visited {color:black;}
+
+
+
+</style>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ -->
+ <link rel="stylesheet" type="text/css" href="fancycat.css">
+ <script src="jquery-1.8.2.js"></script> 
+  <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+
+
+<script src="stalkscript.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+<div id="menu" class="transbox">
+<a href="ambience.html" class="f1">Ambience</a>
+&#160;
+<a href="cafe.html" class="f1">Café</a>
+&#160;
+<a href="cherish.html" class="f1">Cherish</a>
+&#160;
+<a href="content.html" class="f1">Content</a>
+&#160; 
+<a href="contour.html" class="f1">Contour</a>
+&#160;
+<a href="dance.html" class="f1">Dance</a>
+&#160;
+<a href="desolate.html" class="f1">Desolate</a>
+&#160;
+<a href="night.html" class="f1">Night</a>
+&#160;
+<a href="peace.html" class="f1">Peace</a>
+&#160;
+<a href="sky.html" class="f1">Sky</a>
+&#160;
+<a href="tranquil.html" class="f1">Tranquil</a>
+&#160;
+<a href="yearn.html" class="f1">Yearn</a>
+</div>
+
+
+<div class="fixed-action-btn" style="bottom: 70px; left: -1100px;">
+
+	<a id="mtoogle" style="cursor:pointer;" class="btn-floating btn-large waves-effect waves-light  cyan darken-4" ><i id="change-image" class="mdi-av-pause"></i><!-- <img id="change-image" src="sp.png" height=35 width=35 > -->
+	</a>
+	<audio id="playTune" autoplay loop>
+	<source src="music/dance.mp3">
+	</audio>
+
+</div>
+
+	<script type="text/javascript">
+		$("#mtoogle").toggle(
+		function () {
+		document.getElementById('playTune').pause();
+		},
+		function () {
+		document.getElementById('playTune').play();
+		}
+		);
+	</script>
+
+
+	<script>
+	$('#change-image').on
+	(
+	{
+    'click': function () 
+    	{
+        var origsrc = $(this).attr('class');
+        var clas = '';
+        if (origsrc == 'mdi-av-pause') clas = 'mdi-av-play-arrow';
+        if (origsrc == 'mdi-av-play-arrow') clas = 'mdi-av-pause';
+        
+        $(this).attr('class', clas);
+    	}
+	}
+	);
+	</script>
+   	
+
+
+</body>
+
+</html>
+
+
