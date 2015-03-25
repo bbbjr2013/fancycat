@@ -24,6 +24,13 @@ div.transbox a
 
 
 }
+div.playPause
+{
+  position: fixed; 
+  bottom: 50px; 
+  left: 80px; 
+  opacity:0.6;
+}
 
 #container {
   position: relative;
