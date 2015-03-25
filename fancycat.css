@@ -27,8 +27,8 @@ div.transbox a
 div.playPause
 {
   position: fixed; 
-  bottom: 50px; 
-  left: 80px; 
+  bottom: 80px; 
+  left: 120px; 
   opacity:0.6;
 }
 
